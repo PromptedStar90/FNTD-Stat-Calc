@@ -39,17 +39,17 @@ label {
     color: #1e3c72;
 }
 
-/* Center the entire form properly */
+/* Fix scrolling issue */
 form {
     margin-top: -30px; /* Moves form higher */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
-    height: auto; /* Allows form to expand naturally */
-    min-height: 100vh; /* Ensures enough space without blocking scrolling */
-    overflow-y: auto; /* Enables scrolling if needed */
+    min-height: 100vh; /* Allows scrolling */
+    overflow-y: auto; /* Enables scrolling */
+    justify-content: flex-start; /* Moves content to the top instead of keeping it stuck in the center */
+    padding-top: 20px; /* Optional: Adjusts spacing for better look */
 
 }
 
