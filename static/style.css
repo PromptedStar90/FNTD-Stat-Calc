@@ -15,8 +15,13 @@ html, body {
 }
 /* Main Container */
 .container {
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Moves everything up slightly */
+    align-items: center;
+    min-height: 100vh; /* Adjusts vertical centering */
+    padding-top: 30px; /* Moves container up */
     background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
     max-width: 500px;
     width: 90%;
     border-radius: 15px;
