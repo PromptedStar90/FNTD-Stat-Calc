@@ -7,20 +7,18 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
+    overflow-y: auto; /* Enables scrolling */
+    display: block; /* Fixes the flex issue */
+    
 }
+
 /* Main Container */
 .container {
-        display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Moves everything up slightly */
     align-items: center;
-    min-height: 100vh; /* Adjusts vertical centering */
-    padding-top: 20px; /* Moves container up */
+    min-height: auto; /* Allows content to grow naturally */
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     max-width: 500px;
@@ -29,6 +27,9 @@ html, body {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeIn 1s ease-in-out;
+    margin: 40px auto; /* Centers container but allows scrolling */
+}
+
 }
 
 /* Labels */
@@ -41,17 +42,16 @@ label {
 
 /* Fix form positioning and allow scrolling */
 form {
-    margin-top: -30px; /* Moves form slightly higher */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 100vh; /* Allows form to expand */
-    overflow-y: auto; /* Enables scrolling */
-    justify-content: flex-start; /* Prevents form from being stuck in center */
-    padding-top: 20px; /* Adds some spacing */
-    position: relative; /* Ensures scrolling works */
-
+    min-height: auto; /* Prevents forcing full page height */
+    overflow-y: visible; /* Ensures scrolling */
+    justify-content: flex-start;
+    padding-top: 20px;
+    position: relative;
+    
 }
 
 h1 {
@@ -121,7 +121,7 @@ button:hover {
 
 /* Ensure results section doesn't block input */
 .result {
-    margin-top: 30px; /* Adds space between results and input */
+    margin-top: 20px; /* Adds space between results and input */
     padding: 15px;
     background: linear-gradient(135deg, #9B5898, #894276);
     border-radius: 5px;
