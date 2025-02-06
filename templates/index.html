@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stat Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Five Nights Tower Defense Stat Calculator</h1>
-    <form method="post">
-        <label>Base Damage: <input type="text" name="base_damage"></label><br>
-        <label>Base Range: <input type="text" name="base_range"></label><br>
-        <label>Base Cooldown: <input type="text" name="base_cooldown"></label><br>
-        <label>Damage % Change: <input type="text" name="damage_percent_change"></label><br>
-        <label>Range % Change: <input type="text" name="range_percent_change"></label><br>
-        <label>Cooldown % Change: <input type="text" name="cooldown_percent_change"></label><br>
-        <button type="submit">Calculate</button>
-    </form>
+    <div class="container">
+        <h1>Flask Stat Calculator</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="post">
+            <label>Base Damage:</label>
+            <input type="text" name="base_damage" required>
+            
+            <label>Base Range:</label>
+            <input type="text" name="base_range" required>
+            
+            <label>Base Cooldown:</label>
+            <input type="text" name="base_cooldown" required>
+            
+            <label>Damage % Change:</label>
+            <input type="text" name="damage_percent_change" required>
+            
+            <label>Range % Change:</label>
+            <input type="text" name="range_percent_change" required>
+            
+            <label>Cooldown % Change:</label>
+            <input type="text" name="cooldown_percent_change" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        
+        {% if final_damage %}
+            <div class="result">
+                <h2>Results:</h2>
+                <p><strong>Final Damage:</strong> {{ final_damage }}</p>
+                <p><strong>Final Range:</strong> {{ final_range }}</p>
+                <p><strong>Final Cooldown:</strong> {{ final_cooldown }}</p>
+                <p><strong>DPS:</strong> {{ dps }}</p>
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>
