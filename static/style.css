@@ -52,7 +52,7 @@ label {
 
 /* Style input boxes */
 input {
-    width: 50%; /* Adjust width for better appearance */
+    width: 100%; /* Adjust width for better appearance */
     padding: 10px;
     margin-top: 5px;
     border: 2px solid #1e3c72;
