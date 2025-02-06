@@ -1,60 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* General Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
 }
 
+/* Main Container */
 .container {
-    background: white;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
     max-width: 500px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
+/* Heading */
 h1 {
     color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
+/* Labels */
 label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    color: #1e3c72;
 }
 
+/* Input Fields */
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #1e3c72;
     border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
+input:focus {
+    border-color: #ff9800;
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* Submit Button */
 button {
-    background-color: #007BFF;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
     color: white;
     border: none;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 12px;
+    margin-top: 15px;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    transform: scale(1.05);
 }
 
+/* Results Section */
 .result {
     margin-top: 20px;
-    padding: 10px;
-    background-color: #e9ecef;
+    padding: 15px;
+    background: rgba(30, 60, 114, 0.1);
     border-radius: 5px;
 }
 
+/* Error Messages */
 .error {
     color: red;
     font-weight: bold;
 }
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
