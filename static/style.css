@@ -59,7 +59,7 @@ input:focus {
 
 /* Submit Button */
 button {
-    background: linear-gradient(135deg, #ff9800, #ff5722);
+    background: linear-gradient(135deg, #73547C, #37293B);
     color: white;
     border: none;
     padding: 12px;
@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #ff5722, #ff9800);
+    background: linear-gradient(135deg, #9B5898, #894276);
     transform: scale(1.05);
 }
 
