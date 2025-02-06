@@ -40,15 +40,35 @@ label {
     color: #1e3c72;
 }
 
-/* Input Fields */
-input {
+/* Center the entire input container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
     width: 100%;
+    margin: 10px 0;
+}
+
+/* Style input boxes */
+input {
+    width: 50%; /* Adjust width for better appearance */
     padding: 10px;
     margin-top: 5px;
     border: 2px solid #1e3c72;
     border-radius: 5px;
     font-size: 16px;
     transition: 0.3s;
+    text-align: center; /* Centers text inside input */
+}
+
+/* Center form on the page */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centers vertically */
 }
 
 input:focus {
