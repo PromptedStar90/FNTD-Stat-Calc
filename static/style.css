@@ -59,7 +59,7 @@ h1 {
     justify-content: flex-start; /* Moves everything up slightly */
     align-items: center;
     min-height: 100vh; /* Adjusts vertical centering */
-    padding-top: 0px; /* Moves container up */
+    padding-top: 30px; /* Moves container up */
 
 }
 
