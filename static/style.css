@@ -64,6 +64,7 @@ h1 {
     margin-top: 80px; /* Moves title further down */
     margin-bottom: 20px; /* Adds space below */
     padding: 0;
+    color: #3a3a3a;
 }
 
 /* Input Container Styling */
