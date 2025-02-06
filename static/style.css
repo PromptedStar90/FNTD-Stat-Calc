@@ -49,14 +49,12 @@ form {
     width: 100%;
 }
 
-/* Title Styling - Moves it further down */
 h1 {
     font-size: 36px;
     text-align: center;
-    margin-top: 200px; /* Moves title further down */
-    margin-bottom: 10px; /* Adds space below */
+    margin-top: 80px; /* Moves title further down */
+    margin-bottom: 20px; /* Adds space below */
     padding: 0;
-
 }
 
 /* Input Container Styling */
