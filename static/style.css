@@ -48,6 +48,10 @@ form {
     justify-content: center;
     height: 100vh; /* Centers form vertically */
     width: 100%;
+    height: auto; /* Allows form to expand naturally */
+    min-height: 100vh; /* Ensures enough space without blocking scrolling */
+    overflow-y: auto; /* Enables scrolling if needed */
+
 }
 
 h1 {
@@ -101,7 +105,7 @@ button {
     color: white;
     border: none;
     padding: 12px;
-    margin-top: 25px;
+    margin-top: 40px;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
@@ -117,10 +121,11 @@ button:hover {
 
 /* Results Section */
 .result {
-    margin-top: 20px;
     padding: 15px;
     background: linear-gradient(135deg, #9B5898, #894276);;
     border-radius: 5px;
+    margin-top: 30px; /* Adds space between results and inputs */
+
 }
 
 /* Error Messages */
