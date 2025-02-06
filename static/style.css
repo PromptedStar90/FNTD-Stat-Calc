@@ -47,7 +47,7 @@ form {
 h1 {
     font-size: 36px;
     text-align: center;
-    margin-top: 220px; /* Moves title further down */
+    margin-top: 200px; /* Moves title further down */
     margin-bottom: 10px; /* Adds space below */
     padding: 0;
 }
