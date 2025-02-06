@@ -2,8 +2,7 @@
 html, body {
     background: url('https://tr.rbxcdn.com/180DAY-75b4a7322a8fd1df446a3c0eaf3c24fe/768/432/Image/Webp/noFilter') no-repeat center center fixed;
     background-size: cover;
-    color: white; 
-    /* Ensures text is visible */
+    color: white; /* Ensures text is visible */
     height: 100%;
     margin: 0;
     padding: 0;
