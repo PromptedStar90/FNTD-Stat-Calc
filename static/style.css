@@ -21,6 +21,7 @@ html, body {
     align-items: center;
     min-height: 100vh; /* Adjusts vertical centering */
     padding-top: 30px; /* Moves container up */
+    padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     max-width: 500px;
     width: 90%;
