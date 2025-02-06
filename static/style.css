@@ -17,17 +17,22 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: flex-start; /* Aligns content to the top */
-    min-height: 100vh; /* Makes container full height */
-    width: 90%;
-    max-width: 500px;
-    background: rgba(255, 255, 255, 0.9);
+    min-height: 100vh;
+    padding-top: 20px;
     padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 500px;
+    width: 90%;
     border-radius: 15px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeIn 1s ease-in-out;
+
+    /* These two lines ensure it's centered */
+    margin: 0 auto; /* Centers it horizontally */
+    position: relative; /* Ensures proper positioning */
 
 }
 
