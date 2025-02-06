@@ -56,16 +56,6 @@ h1 {
     margin-top: 200px; /* Moves title further down */
     margin-bottom: 10px; /* Adds space below */
     padding: 0;
-}
-
-/* Main Container - Moves it slightly up */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Moves everything up slightly */
-    align-items: center;
-    min-height: 100vh; /* Adjusts vertical centering */
-    padding-top: 30px; /* Moves container up */
 
 }
 
@@ -76,7 +66,7 @@ h1 {
     align-items: center;
     width: 90%; /* Increases width */
     max-width: 600px; /* Prevents inputs from being too large */
-    margin: 15px 0;
+    margin: 30px 0;
 }
 
 /* Properly position labels */
