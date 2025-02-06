@@ -39,17 +39,18 @@ label {
     color: #1e3c72;
 }
 
-/* Fix scrolling issue */
+/* Fix form positioning and allow scrolling */
 form {
-    margin-top: -30px; /* Moves form higher */
+    margin-top: -30px; /* Moves form slightly higher */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 100vh; /* Allows scrolling */
+    min-height: 100vh; /* Allows form to expand */
     overflow-y: auto; /* Enables scrolling */
-    justify-content: flex-start; /* Moves content to the top instead of keeping it stuck in the center */
-    padding-top: 20px; /* Optional: Adjusts spacing for better look */
+    justify-content: flex-start; /* Prevents form from being stuck in center */
+    padding-top: 20px; /* Adds some spacing */
+    position: relative; /* Ensures scrolling works */
 
 }
 
@@ -118,12 +119,14 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Results Section */
+/* Ensure results section doesn't block input */
 .result {
+    margin-top: 30px; /* Adds space between results and input */
     padding: 15px;
-    background: linear-gradient(135deg, #9B5898, #894276);;
+    background: linear-gradient(135deg, #9B5898, #894276);
     border-radius: 5px;
-    margin-top: 30px; /* Adds space between results and inputs */
+    width: 90%;
+    max-width: 600px;
 
 }
 
