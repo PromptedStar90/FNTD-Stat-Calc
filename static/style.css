@@ -45,21 +45,21 @@ form {
 
 /* Title Styling - Moves it further down */
 h1 {
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
-    margin-top: 50px; /* Increases space above the title */
-    margin-bottom: 20px; /* Adds space below the title */
+    margin-top: 80px; /* Moves title further down */
+    margin-bottom: 20px; /* Adds space below */
     padding: 0;
 }
 
-/* Adjusts the main container's vertical position */
+/* Main Container - Moves it slightly up */
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Moves everything down */
+    justify-content: flex-start; /* Moves everything up slightly */
     align-items: center;
-    min-height: 90vh; /* Adjusts vertical centering */
-    padding-top: 30px; /* Pushes content down */
+    min-height: 85vh; /* Adjusts vertical centering */
+    padding-top: 10px; /* Moves container up */
 
 }
 
