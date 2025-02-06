@@ -25,13 +25,6 @@ html, body {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Heading */
-h1 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 /* Labels */
 label {
     display: block;
@@ -40,7 +33,7 @@ label {
     color: #1e3c72;
 }
 
-/* Center the form and ensure proper spacing */
+/* Center the entire form properly */
 form {
     display: flex;
     flex-direction: column;
@@ -50,26 +43,35 @@ form {
     width: 100%;
 }
 
-/* Style the input container for better spacing */
+/* Title Styling - Moves it down */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px; /* Adds space below the title */
+    padding-top: 20px; /* Moves title slightly down */
+}
+
+/* Input Container Styling */
 .input-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%; /* Makes inputs wider */
-    margin: 10px 0;
+    width: 90%; /* Increases width */
+    max-width: 600px; /* Prevents inputs from being too large */
+    margin: 15px 0;
 }
 
 /* Properly position labels */
 .input-container label {
-    font-size: 18px;
-    margin-bottom: 5px; /* Adds spacing between label and input */
+    font-size: 20px;
+    margin-bottom: 8px; /* Adds spacing between label and input */
     text-align: center;
 }
 
 /* Improve input field size and spacing */
 input {
-    width: 70%; /* Increases width */
-    padding: 12px; /* More padding for better appearance */
+    width: 85%; /* Increases width */
+    padding: 14px; /* More padding for better appearance */
     margin-top: 5px;
     border: 2px solid #1e3c72;
     border-radius: 8px;
@@ -78,11 +80,11 @@ input {
     text-align: center; /* Centers text inside input */
 }
 
-/* Optional: Add hover effect for better UX */
+/* Optional: Add hover and focus effects */
 input:focus {
     border-color: #9B5898;
     outline: none;
-    box-shadow: 0px 0px 10px rgba(155, 88, 152, 0.5);
+    box-shadow: 0px 0px 12px rgba(155, 88, 152, 0.5);
 }
 
 /* Submit Button */
