@@ -43,22 +43,24 @@ form {
     width: 100%;
 }
 
-/* Title Styling - Moves it down */
+/* Title Styling - Moves it further down */
 h1 {
     font-size: 32px;
     text-align: center;
-    margin-top: 20px; /* Moves title down */
-    margin-bottom: 20px; /* Adds space below title */
+    margin-top: 50px; /* Increases space above the title */
+    margin-bottom: 20px; /* Adds space below the title */
     padding: 0;
 }
 
-/* Fix flex centering issue */
+/* Adjusts the main container's vertical position */
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Moves everything down */
     align-items: center;
-    min-height: 80vh; /* Adjusts vertical centering */
+    min-height: 90vh; /* Adjusts vertical centering */
+    padding-top: 30px; /* Pushes content down */
+
 }
 
 /* Input Container Styling */
